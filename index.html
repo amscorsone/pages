@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Home page</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/product/">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!--  -->
+    <style>
+        .container {
+            max-width: 960px;
+            text-align: left;
+            
+        }
+  /*
+ * Custom translucent site header
+ */
+ 
+    .modal-content {
+        background-color:tan;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        color: #fff;
+        }
+
+ /*
+ *ALL OF THESE ARE FOR THE SITE HEADER
+ */  
+        .site-header {
+           
+            
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+            width: 1400px;
+        
+        }
+
+        .site-header a {
+            color: #050000;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #070000;
+            text-decoration:none;
+        }
+
+        .colum1{
+            width: 1450px;
+            height: 800px;
+            background-image: url(pictures/homey.jpeg) ;
+            background-size: 1500px 800px ;   
+        }
+
+         /*
+ *FOR THE TITLE SHADOW SO IT SHOWS UP BETTER ON THE SCREEN 
+ */ 
+        .title{
+            text-shadow: 0 0 8px #a4b8e2;
+            color: #ffffff;
+        }
+       
+        .container-full {
+            width: 1440px;
+            background-color:#02131d;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(8, 10, 10);
+        }
+
+        .flex-equal>* {
+            flex: 1;
+        }
+
+ /*
+ *BODY CONTENT  ---------
+ */ 
+
+/*
+ *this for the section after the intro might delete background-image: url(pictures/homeW.jpeg);
+ */ 
+        .info{
+            color: rgb(0, 0, 0);
+            background-color: #02131d;
+            
+            background-size: 1500px 705px ; 
+            width: auto;
+            height: 800px;
+        }
+        
+        .py-2{
+            color:#ffffff ;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal>* {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-full">
+
+    
+
+ <!-- END OF NAVBAR -->
+
+  <!-- START of page header!!!! with backgorun pictures site title, subtitle, modal for intro page- content page -->
+ <table>
+<div class="row">
+    <div class="colum1">
+
+         <!-- NAVBAR- 3 TABs, home content and a possibel about page/intro 
+        *** had to put in in this class so the titile picture would align at the top of the page  -->
+     <nav class="site-header sticky-top py-1">
+       
+        <div class="container d-flex flex-column flex-md-row justify-content-between" >
+            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:#ffffff" href="tab1.html">Background</a>
+            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:#ffffff"href="index.html">Home Page</a>
+            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:#ffffff"href="green.html">Content Page</a>
+            
+        </div>
+    </nav>
+    <!-- NAV BAR END START OF TITLE -->
+
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ; ">
+            
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+            </div>
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <div class="title" style="background-color: #02131d;">
+                    
+                    <h1 style="background-color: #02131d;">Before It's Forgotten</h1>
+                    <p class="lead font-weight-normal" style="background-color: #02131d;">An example of the life of art through technology</p>
+
+                </div>      
+                <p style="color:#fcf8f9 mx-auto">
+                             ------------------------------------------------
+                        </p>
+                 
+ <!-- Button trigger for the  modal -->
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        Let's Start!
+        </button>
+  
+  <!--  modal body to intro the project if the skip button is -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" >Welcome!</h5>
+          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+ <!--  END OF MODAL-->
+      
+         <p style="color: #fff;">  You are about to go to the content pages to view the work! 
+          <br>
+          I am so happy you're here checking out my SIP(senior indivualized project). 
+          If you have not alreadly I would recomed srcolling down on the home page a read the site/ project background and explain to give you a better sense of what you're about 
+          to look at. 
+          <br>
+          If you have alrealdy read the intro awesome! I hope you enjoy my site Before It's Forgotten and all of the work within it!
+        </p> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"> < Back 2 Home </button>
+          <a class="btn btn-outline-primary" href="green.html"> Skip 2 Content ></a>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+ <!-- END OF SITE HEADER -->
+
+  
+    
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+                <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Cool stuff</a></li>
+                    <li><a class="link-secondary" href="#">Random feature</a></li>
+                    <li><a class="link-secondary" href="#">Team feature</a></li>
+                    <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+                    <li><a class="link-secondary" href="#">Another one</a></li>
+                    <li><a class="link-secondary" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Resource name</a></li>
+                    <li><a class="link-secondary" href="#">Resource</a></li>
+                    <li><a class="link-secondary" href="#">Another resource</a></li>
+                    <li><a class="link-secondary" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Business</a></li>
+                    <li><a class="link-secondary" href="#">Education</a></li>
+                    <li><a class="link-secondary" href="#">Government</a></li>
+                    <li><a class="link-secondary" href="#">Gaming</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Team</a></li>
+                    <li><a class="link-secondary" href="#">Locations</a></li>
+                    <li><a class="link-secondary" href="#">Privacy</a></li>
+                    <li><a class="link-secondary" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+        
+        // Paste the code from Firebase
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "Your_AuthDomain",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        
+        // Get a reference to the database service
+        const db = getDatabase(app);
+        
+        document.getElementById('frmContact').addEventListener('submit', function(e) {
+            e.preventDefault();
+            set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
+                name: document.getElementById('fullname').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            });
+        
+            alert('Your form is submitted');
+            document.getElementById('frmContact').reset();
+        });
+
+        // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+</body>
+
+</html>
