@@ -33,36 +33,33 @@
  * Custom translucent site header
  */
     .modal-content {
-        background-color:tan;
+        background-color:rgb(12, 34, 60);
         color: #fff;
         }
 
  /*
  *ALL OF THESE ARE FOR THE SITE HEADER
  */  
-        .site-header {
+ .site-header {
            
-            background-color:#ecf4f8;
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-            width: 1400px;
-        
-        }
+            
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    
 
-        .site-header a {
-            color: #081d49;
-            transition: color .15s ease-in-out;
-        }
+}
 
-        .site-header a:hover {
-            color: rgb(92, 39, 39);
-            text-decoration:none;
-        }
+.site-header a {
+    color: #050000;
+    transition: color .15s ease-in-out;
+}
 
-        .colum1{
-            background-image: url(pictures/center2.jpeg);
-            background-size: 1500px 685px ;   
-        }
+.site-header a:hover {
+    color: #070000;
+    text-decoration:none;
+}
+
+
 
          /*
  *FOR THE TITLE SHADOW SO IT SHOWS UP BETTER ON THE SCREEN 
@@ -101,15 +98,13 @@
 
 <body class="container-full">
 
-
-
-     <!-- NAVBAR- 3 TABs, home content and a possibel about page/intro -->
+<!-- NAVBAR- 3 TABs, home content and a possibel about page/intro -->
      <nav class="site-header sticky-top py-1">
        
         <div class="container d-flex flex-column flex-md-row justify-content-between" style="text-align: left;">
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;" href="tab1.html">Background</a>
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;"href="index.html">Home Page</a>
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;"href="green.html">Content Page</a>
+            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:white;" href="tab1.html">Background</a>
+            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;color:white;"href="index.html">Home Page</a>
+            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;color:white;"href="opener.html">Content Page</a>
             
         </div>
     </nav>
@@ -157,13 +152,13 @@
                     <p class="lead"> Short awnser... I needed to make something for my SIP or my Senior Computer Science Project. AKA a graduation requirment </p>
                
                 
-                <button type="buttonc" class="btn btn-danger" data-toggle="modal" data-target="#first">
+                <button type="buttonc" class="btn btn-light" data-toggle="modal" data-target="#first">
                     Longer Anwser
                     </button>
               
               <!--  modal body to intro the project if the skip button is -->
               <div class="modal fade" id="first" tabindex="-1" aria-labelledby="first" aria-hidden="true">
-                <div class="modal-dialog ">
+                <div class="modal-dialog modal-lg ">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close " data-dismiss="modal" aria-label="Close">
@@ -192,13 +187,13 @@
                     <p class="lead"> Short awnser... It was a ten-ish week project that uses Bootstrap (an HTML and Javascript framework) with CSS </p>
                 </div>
               
-            <button type="buttonc" class="btn btn-danger" data-toggle="modal" data-target="#second">
+            <button type="buttonc" class="btn btn-light" data-toggle="modal" data-target="#second">
                 Longer Anwser
                 </button>
           
           <!--  modal body to intro the project if the skip button is -->
           <div class="modal fade" id="second" tabindex="-1" aria-labelledby="first" aria-hidden="true">
-            <div class="modal-dialog ">
+            <div class="modal-dialog modal-lg ">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close " data-dismiss="modal" aria-label="Close">
@@ -227,13 +222,13 @@
                 <p class="lead"> </p>
             </div>
           
-        <button type="buttonc" class="btn btn-danger" data-toggle="modal" data-target="#third">
+        <button type="buttonc" class="btn btn-light" data-toggle="modal" data-target="#third">
             Longer Anwser
             </button>
       
       <!--  modal body to intro the project if the skip button is -->
       <div class="modal fade" id="third" tabindex="-1" aria-labelledby="first" aria-hidden="true">
-        <div class="modal-dialog ">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close " data-dismiss="modal" aria-label="Close">
@@ -260,7 +255,7 @@
    
 
 
-    <div class="div-container" style="height: 50px;">
+    <div class="div-container" style="height: 100px;">
         <!-- THIS IS JUST A SPACER :))-->  
     </div>
 
@@ -268,15 +263,31 @@
 
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="height: 500px;">
-            <div class="my-3 p-3" style=" color:#ffffff">
-                <h2 class="display-5" style="color: rgb(235, 228, 228);"> Evalution Pictures</h2>
-                <p class="lead">First content page try- at this time there were only three content pages Black, Pink, and Green</p>
-            </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            <img src="pplwork/updates/SIP/startOFC.png" class="img-fluid">
-            <p style="height: 100px;"> this was the first screen shot I took of my web page- I was very lost <br>and was just trying out some UI i thought would be useful</p>
-            </div>
+        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="height: 800px;">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="first.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="second.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="three.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="four.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon btn-secondary" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon btn-secondary" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
         
         </div>
@@ -296,5 +307,43 @@
    
 
 </body>
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                viewBox="0 0 24 24">
+                <title>Product</title>
+                <circle cx="12" cy="12" r="10" />
+                <path
+                    d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+            </svg>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Cool stuff</a></li>
+               
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Resource name</a></li>
+                
+            </ul>
+        </div>
+      
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Team</a></li>
+               
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </html>
