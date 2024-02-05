@@ -28,60 +28,127 @@
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 color: rgb(8, 10, 10);
                 background-image: url(can1.jpeg);
+                
             }
 
             /*
- *ALL OF THESE ARE FOR THE SITE HEADER
- */  
-        .site-header {
-           
-            background-color:#ecf4f8;
-        
+            *ALL OF THESE ARE FOR THE SITE HEADER
+            */  
+        .navbar {
+             -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
         }
 
-        .site-header a {
+        .navbar a {
             color: #081d49;
             transition: color .15s ease-in-out;
         }
 
-        .site-header a:hover {
+        .navbar a:hover {
             color: rgb(92, 39, 39);
             text-decoration:none;
         }
 
+        .nav-item{
+            text-decoration: none;
+        }
+
+        .box {
+          background-color: #f5f8fa;
+          text-align: center;
+        }
+        .container-sm{
+          min-height: 100%;
+          min-width: 100%;
+        }
+
+        .parent{
+          position: relative;
+          width: 500px;
+       }
+       .img{
+         width:500px;
+       }
+       .top-left{
+          position: absolute;
+          left:0;
+          top:0;
+       }
+       .top-right{
+          position: absolute;
+          right:0;
+          top:0;
+       }
+       .bottom-left{
+          position: absolute;
+          left:0;
+          bottom:0;
+       }
+       .middle{
+        position: absolute;
+      
+       }
+       .bottom-right{
+          position: absolute;
+          right:0;
+          bottom:0;
+       }
         </style>
 
 </head>
 <body class="container-full">
 
-
-
-    <!-- NAVBAR- 3 TABs, home content and a possibel about page/intro
-    <nav class="site-header sticky-top py-1">
-      
-       <div class="container d-flex flex-column flex-md-row justify-content-between" style="text-align: left;">
-  
-           
-       </div>
-   </nav>
- -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+ <nav class="navbar navbar-expand-lg navbar-light py-1 sticky-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between" style="text-align: left;">
+    <a class="navbar-brand" href="index.html">Before It's Forgotten</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;" href="tab1.html">Background</a>
-        <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;"href="index.html">Home Page</a>
-        <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;"href="green.html">Content Page</a>
+        <a class="nav-item nav-link  py-2 d-none d-md-inline-block" href="tab1.html">Background </a>
+        <a class="nav-item nav-link py-2 d-none d-md-inline-block" href="index.html">Home</a>
+        <a class="nav-item nav-link active py-2 d-none d-md-inline-block" href="opener.html"> <span class="sr-only">(current)</span> Content</a>
       </div>
     </div>
+    </div>
   </nav>
-   <h1> This is going to be th welcome page  </h1>
 
+  <br><br>
+  <div class="container-xl">
+      <h1> Before It's Forgotten Content Intro...</h1>
+      <br><br><br>
+      <div class="box">
+          <div class="row d-flex justify-content-center">
+            <div class="col-3 ">
+              <p>one shot for my pain</p>
+            </div>
+            <div class="col-3 ">
+              <p>one drag for my sarrows</p>
+            </div>
+            <div class="col-3">
+              <p>get fucked up today</p>
+            </div>
+          </div>
+      </div>
+  </div>
 
+<div class="container-sm">
+  <img src="homey.jpeg" class="img-fluid">
+      <div class="row d-flex text-center justify-content-center">
+        hello
+      </div>
+  </div>
+</div>
 
+<div class="parent">
+  <img src="homey.jpeg" alt="" class="img">
+  <div class="top-left">This is top left</div>
+  <div class="row text-center">This is top right</div>
+  <div class="align-middle"> middle please</div>
+  <div class="bottom-left">This is bottom left</div>
+  <div class="bottom-right">This is bottom right</div>
+</div>
 
     <!-- div-->
 

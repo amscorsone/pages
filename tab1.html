@@ -25,7 +25,6 @@
     <!--  -->
     <style>
         .container {
-            max-width: 960px;
             text-align: left;
             
         }
@@ -37,30 +36,7 @@
         color: #fff;
         }
 
- /*
- *ALL OF THESE ARE FOR THE SITE HEADER
- */  
- .site-header {
-           
-            
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    
-
-}
-
-.site-header a {
-    color: #050000;
-    transition: color .15s ease-in-out;
-}
-
-.site-header a:hover {
-    color: #070000;
-    text-decoration:none;
-}
-
-
-
+ 
          /*
  *FOR THE TITLE SHADOW SO IT SHOWS UP BETTER ON THE SCREEN 
  */ 
@@ -73,6 +49,7 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: rgb(8, 10, 10);
             background-image: url(can1.jpeg);
+            height: 100vh;
         }
 
         .flex-equal>* {
@@ -84,7 +61,27 @@
             background-color:#3f5a36 ;
         }
 
-
+            /*
+            *ALL OF THESE ARE FOR THE SITE HEADER
+            */  
+            .navbar {
+                 -webkit-backdrop-filter: saturate(180%) blur(20px);
+                backdrop-filter: saturate(180%) blur(20px);
+            }
+    
+            .navbar a {
+                color: #081d49;
+                transition: color .15s ease-in-out;
+            }
+    
+            .navbar a:hover {
+                color: rgb(92, 39, 39);
+                text-decoration:none;
+            }
+    
+            .nav-item{
+                text-decoration: none;
+            }
        
         
 
@@ -98,16 +95,21 @@
 
 <body class="container-full">
 
-<!-- NAVBAR- 3 TABs, home content and a possibel about page/intro -->
-     <nav class="site-header sticky-top py-1">
-       
+    <nav class="navbar navbar-expand-lg navbar-light py-1 sticky-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between" style="text-align: left;">
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:white;" href="tab1.html">Background</a>
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;color:white;"href="index.html">Home Page</a>
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;color:white;"href="opener.html">Content Page</a>
-            
+        <a class="navbar-brand" href="index.html">Before It's Forgotten</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="tab1.html">Background <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link py-2 d-none d-md-inline-block" href="index.html">Home</a>
+            <a class="nav-item nav-link py-2 d-none d-md-inline-block" href="opener.html">content</a>
+          </div>
         </div>
-    </nav>
+        </div>
+      </nav>
 
  <!-- END OF NAVBAR -->
 
@@ -148,7 +150,7 @@
                 
                  <!--  FIrst-->
         
-                    <h2 class="display-5 row d-flex justify-content-center" >Why Before It's Forgotten?</h2>
+                    <h2 class="display-5 row d-flex justify-content-center" >Why Was This Site Created?</h2>
                     <p class="lead"> Short awnser... I needed to make something for my SIP or my Senior Computer Science Project. AKA a graduation requirment </p>
                
                 
@@ -183,7 +185,7 @@
             <div class="mr-md-7 pt-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
             
                 <div class="my-3 py-3">
-                    <h2 class="display-5">BIF in Detail</h2>
+                    <h2 class="display-5">How Is Technology and Art Being Combinded?</h2>
                     <p class="lead"> Short awnser... It was a ten-ish week project that uses Bootstrap (an HTML and Javascript framework) with CSS </p>
                 </div>
               
@@ -246,6 +248,38 @@
         </div>
         </div>
     <br>
+
+    <div class="mr-md-7 pt-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            
+      <div class="my-3 py-3">
+          <h2 class="display-5">How was BIF made?</h2>              
+          <p class="lead"> </p>
+      </div>
+    
+  <button type="buttonc" class="btn btn-light" data-toggle="modal" data-target="#third">
+      Longer Anwser
+      </button>
+
+<!--  modal body to intro the project if the skip button is -->
+<div class="modal fade" id="third" tabindex="-1" aria-labelledby="first" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<!--  END OF MODAL-->
+    
+       <p style="color: #fff;">  
+          </p>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+<br>
 
 
 

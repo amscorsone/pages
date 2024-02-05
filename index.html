@@ -39,31 +39,36 @@
         color: #fff;
         }
 
- /*
- *ALL OF THESE ARE FOR THE SITE HEADER
- */  
-        .site-header {
-  
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-        
-        }
-
-        .site-header a {
-            color: #050000;
-            transition: color .15s ease-in-out;
-        }
-
-        .site-header a:hover {
-            color: #070000;
-            text-decoration:none;
-        }
+   /*
+            *ALL OF THESE ARE FOR THE SITE HEADER
+    */  
+            .navbar {
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+               backdrop-filter: saturate(180%) blur(20px);
+               
+            }
+   
+           .navbar a {
+               color: #081d49;
+               transition: color .15s ease-in-out;
+           }
+   
+           .navbar a:hover {
+               color: rgb(92, 39, 39);
+               text-decoration:none;
+           }
+   
+           .nav-item{
+               text-decoration: none;
+               color:white;
+           }
 
         .colum1{
             width: 1450px;
             height: 800px;
             background-image: url(homey.jpeg) ;
             background-size: 1500px 800px ;   
+            position: relative;
         }
 
          /*
@@ -113,23 +118,30 @@
     </style>
 </head>
 
+
+
 <body class="container-full">
 
-
   <!-- START of page header!!!! with backgorun pictures site title, subtitle, modal for intro page- content page -->
-    <div class="colum1">
+    <div class="colum1 img-fluid">
 
          <!-- NAVBAR- 3 TABs, home content and a possibel about page/intro 
         *** had to put in in this class so the titile picture would align at the top of the page  -->
-     <nav class="site-header sticky-top py-1">
-       
-        <div class="container d-flex flex-column flex-md-row justify-content-between" >
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:#ffffff" href="tab1.html">Background</a>
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:#ffffff"href="index.html">Home Page</a>
-            <a class="py-2 d-none d-md-inline-block" style="text-decoration: none; color:#ffffff"href="opener.html">Content Page</a>
-            
-        </div>
-    </nav>
+     <nav class="navbar navbar-expand-lg navbar-light py-1 sticky-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between" style="text-align: left;">
+    <a class="navbar-brand" href="index.html">Before It's Forgotten</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link  d-none d-md-inline-block" href="tab1.html">Background </a>
+        <a class="nav-item nav-link  d-none d-md-inline-block" href="index.html">Home</a>
+        <a class="nav-item nav-link active d-none d-md-inline-block" href="opener.html"> <span class="sr-only">(current)</span> Content</a>
+      </div>
+    </div>
+    </div>
+  </nav>
     <!-- NAV BAR END START OF TITLE -->
 
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ; ">
@@ -168,9 +180,11 @@
          <h5 style="color: #fff;">  Before It's Forgotten is a meduim I built to hold the art work and stories of my friends and family.
 
           <br> <br>
-          So far there are four sections divided by colors that represent different stages of life and emontion: Black, Pink, Blue, and Green
+          So far there are four sections divided by colors: Black, Pink, Blue, and Green
           <br> <br>
-          If you have any questions or need further explination click visit the background page..
+            Each color houses poems, pictures, and art work that represents the color-- For example the pink page is all about love, lust, and beauty key elements seen in all of the content on the page.
+          <br> <br>
+          If you have any questions or need further explination visit the background page for a breakdown of this website and the project behind it..
           <br>
           If not then free feel to visit the content page and explore! 
           <br> <br>
@@ -178,8 +192,8 @@
          </h5> 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> < Background </button>
-          <a class="btn btn-outline-primary" href="green.html"> Content ></a>
+          <button type="button" class="btn btn-outline-danger" href="tab1.html"> < Background </button>
+          <a class="btn btn-outline-primary" href="opener.html"> Content ></a>
         </div>
       </div>
     </div>
